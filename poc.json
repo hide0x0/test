@@ -1,8 +1,8 @@
 {
-    "url": "https://raw.githubusercontent.com/hide0x0/test/main/domxss.yaml",
+    "url": "https://raw.githubusercontent.com/hide0x0/test/main/poc.yaml",
     "urls": [
         {
-            "url": "https://raw.githubusercontent.com/hide0x0/test/main/domxss.yaml",
+            "url": "https://raw.githubusercontent.com/hide0x0/test/main/poc.yaml",
             "name": "hide"
         }
     ]
