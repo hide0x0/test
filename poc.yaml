@@ -1,0 +1,12 @@
+---
+openapi: 3.0.1
+info:
+  title: Hide Api
+  version: '1.0'
+paths:
+  "/path/malformed/by/abir":
+    post:
+      tags:
+      - Abir
+      parameters:
+      - name: Abir
